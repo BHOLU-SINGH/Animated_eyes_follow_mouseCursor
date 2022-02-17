@@ -1,7 +1,14 @@
+/* 
+Author Name	: Bholu Singh
+Website		: Free Projects1 
+File Name 	: style.css
+*/
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	user-select: none;
 }
 body{
 	display: flex;
@@ -10,7 +17,7 @@ body{
 	min-height: 100vh;
 	background: #5d3800;
 }
-.face{
+.face-div{
 	position: relative;
 	width: 300px;
 	height: 300px;
@@ -20,7 +27,7 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.face::before{
+.face-div::before{
 	content: '';
 	position: absolute;
 	top: 180px;
@@ -31,7 +38,7 @@ body{
 	border-bottom-right-radius: 70px;
 	transition: 0.5s;
 }
-.face:hover::before{
+.face-div:hover::before{
 	top: 210px;
 	width: 150px;
 	height: 20px;
@@ -39,12 +46,12 @@ body{
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
-.eyes{
+.eyes-div{
 	position: relative;
 	top: -40px;
 	display: flex;
 }
-.eyes .eye{
+.eyes-div .eye{
 	position: relative;
 	width: 80px;
 	height: 80px;
@@ -53,7 +60,7 @@ body{
 	margin: 0 15px;
 	border-radius: 50%;
 }
-.eyes .eye::before{
+.eyes-div .eye::before{
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -64,7 +71,7 @@ body{
 	background: #333;
 	border-radius: 50%;
 }
-.face a{
+.face-div a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
